@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Qur'an Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar reader-topbar">
+    <a class="brand" href="index.html">← Qur'an</a>
+    <div class="reader-actions">
+      <button id="langBtn" class="icon-btn" aria-label="Switch language">EN</button>
+      <button id="fontDown" class="icon-btn" aria-label="Decrease font size">A−</button>
+      <button id="fontUp" class="icon-btn" aria-label="Increase font size">A+</button>
+      <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">☾</button>
+    </div>
+  </header>
+
+  <main class="reader">
+    <section class="surah-header">
+      <p id="surahNumber" class="eyebrow">SURAH</p>
+      <h1 id="surahName">Loading...</h1>
+      <p id="surahInfo" class="muted">—</p>
+      <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+    </section>
+
+    <div id="ayahList" class="ayah-list">
+      <div class="loading">Loading Qur'an...</div>
+    </div>
+
+    <div class="reader-nav">
+      <button id="prevBtn" class="secondary-btn">← Previous</button>
+      <button id="nextBtn" class="primary-btn">Next →</button>
+    </div>
+  </main>
+
+  <footer>Qur'an reader</footer>
+  <script src="js/reader.js"></script>
+</body>
+</html>
